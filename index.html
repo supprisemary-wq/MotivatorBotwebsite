@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>✨ Motivator - Daily Inspiration</title>
+    
+    <!-- Telegram Mini App SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="premium-header">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span>Motivator</span>
+            </div>
+            <div class="header-status">
+                <span class="live-dot"></span>
+                <span>Inspire</span>
+            </div>
+        </header>
+
+        <!-- Main Quote Card -->
+        <div class="quote-container">
+            <div class="quote-card" id="quote-card">
+                <div class="quote-icon">"</div>
+                <p class="quote-text" id="quote-text">
+                    The only way to do great work is to love what you do.
+                </p>
+                <p class="quote-author" id="quote-author">— Steve Jobs</p>
+                <div class="quote-tags" id="quote-tags">
+                    <span class="tag">#motivation</span>
+                    <span class="tag">#success</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="action-grid">
+            <button class="action-btn primary" id="new-quote-btn">
+                <i class="fas fa-sync-alt"></i> New Quote
+            </button>
+            <button class="action-btn secondary" id="share-btn">
+                <i class="fas fa-share-alt"></i> Share
+            </button>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories-section">
+            <h3>📂 Browse by Mood</h3>
+            <div class="category-grid">
+                <button class="category-btn" data-category="motivation">🔥 Motivation</button>
+                <button class="category-btn" data-category="success">🏆 Success</button>
+                <button class="category-btn" data-category="happiness">😊 Happiness</button>
+                <button class="category-btn" data-category="wisdom">🧠 Wisdom</button>
+                <button class="category-btn" data-category="strength">💪 Strength</button>
+                <button class="category-btn" data-category="life">🌱 Life</button>
+            </div>
+        </div>
+
+        <!-- Favorites (Optional) -->
+        <div class="favorites-section" id="favorites-section">
+            <h3>⭐ Your Favorites</h3>
+            <div id="favorites-list">
+                <p class="empty-message">Save your favorite quotes here!</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>✨ Stay inspired, stay motivated</p>
+            <p class="footer-sub">Made with ❤️ for Telegram</p>
+        </footer>
+    </div>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="script.js"></script>
+</body>
+</html>
